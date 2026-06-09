@@ -1,0 +1,49 @@
+/*
+ * Expected structure
+ *
+ * export interface ModuleNode {
+ *  name: string;
+ *  label: string;
+ *  permissions: string[];
+ *  submodules?: ModuleNode[];
+ * }
+ */
+
+{
+  "modules": [
+    {
+      "name": "Fomento",
+      "label": "promotion",
+      "permissions": ["MODULE"],
+      "submodules": [
+        {
+          "name": "Produtores",
+          "label": "farmers",
+          "permissions": ["MODULE"],
+          "submodules": [
+            {
+              "name": "Gestao de produtores",
+              "label": "manage",
+              "permissions": [
+                "MODULE",
+                "READ",
+                "PRINT",
+                "EXPORT",
+                "CREATE",
+                "UPDATE",
+                "DELETE",
+              ],
+              "submodules": [],
+            },
+            {
+              "name": "Transferencias",
+              "label": "transfer",
+              "permissions": ["MODULE", "TRANSFER_FARMER"],
+              "submodules": [],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+}
