@@ -46,7 +46,7 @@
     "typescript": "^5.4.5"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "dependencies": {
     "json5": "^2.2.3",
