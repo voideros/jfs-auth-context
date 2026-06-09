@@ -16,6 +16,7 @@
       "label": "promotion",
       "permissions": ["MODULE"],
       "submodules": [
+        // Farmers
         {
           "name": "Produtores",
           "label": "farmers",
@@ -27,7 +28,6 @@
               "permissions": [
                 "MODULE",
                 "READ",
-                "PRINT",
                 "EXPORT",
                 "CREATE",
                 "UPDATE",
@@ -43,7 +43,25 @@
             },
           ],
         },
+        // Questionnaires
+        {
+          "name": "Questionários",
+          "label": "questionnaire",
+          "permissions": ["MODULE"],
+          "submodules": [
+            {
+              "name": "Questionários - Análise",
+              "label": "analysis",
+              "permissions": ["MODULE", "READ", "EXPORT"],
+              "submodules": [],
+            },
+          ],
+        },
       ],
+    },
+
+    {
+      "name": "Helpdesk",
     },
   ],
 }
