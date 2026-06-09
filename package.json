@@ -1,5 +1,5 @@
 {
-  "name": "@jfs/shared-modules-and-auth-context",
+  "name": "@edilson258/jfs-shared-modules-and-auth-context",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -46,7 +46,11 @@
     "typescript": "^5.4.5"
   },
   "publishConfig": {
-    "access": "public"
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edilson258/jfs-auth-context.git"
   },
   "dependencies": {
     "json5": "^2.2.3",
