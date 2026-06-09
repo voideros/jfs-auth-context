@@ -32,6 +32,6 @@ jobs:
         run: yarn run prepublishOnly
 
       - name: Publish to NPM
-        run: npm publish --access public
+        run: npm publish --access restricted
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
