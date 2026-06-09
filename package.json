@@ -28,7 +28,7 @@
     "fmt": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "generate": "ts-node src/cli.ts",
-    "prepublishOnly": "yarn generate MODULES.json && yarn build && yarn test",
+    "prepublishOnly": "yarn generate MODULES.jsonc && yarn build && yarn test",
     "changeset": "changeset",
     "release": "npm run build && changeset publish"
   },
