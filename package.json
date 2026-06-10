@@ -1,5 +1,5 @@
 {
-  "name": "@edilson258/jfs-shared-modules-and-auth-context",
+  "name": "@voideros/jfs-shared-modules-and-auth-context",
   "version": "1.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -50,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edilson258/jfs-auth-context.git"
+    "url": "git+https://github.com/voideros/jfs-auth-context.git"
   },
   "dependencies": {
     "json5": "^2.2.3",
