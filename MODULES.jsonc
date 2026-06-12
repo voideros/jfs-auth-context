@@ -334,7 +334,7 @@
         },
         {
           "name": "Suporte (Tickets)",
-          "label": "helpdesk.support",
+          "label": "helpdesk.ticket",
           "submodules": [],
         },
         {

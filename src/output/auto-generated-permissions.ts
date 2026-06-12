@@ -266,13 +266,13 @@ export type Permission =
   | "helpdesk.sms.read"
   | "helpdesk.sms.readonly"
   | "helpdesk.sms.update"
-  | "helpdesk.support.create"
-  | "helpdesk.support.delete"
-  | "helpdesk.support.export"
-  | "helpdesk.support.print"
-  | "helpdesk.support.read"
-  | "helpdesk.support.readonly"
-  | "helpdesk.support.update"
+  | "helpdesk.ticket.create"
+  | "helpdesk.ticket.delete"
+  | "helpdesk.ticket.export"
+  | "helpdesk.ticket.print"
+  | "helpdesk.ticket.read"
+  | "helpdesk.ticket.readonly"
+  | "helpdesk.ticket.update"
   | "helpdesk.update"
   | "incentive_control.create"
   | "incentive_control.dashboard.create"
@@ -779,13 +779,13 @@ export const PERMISSIONS = [
   "helpdesk.sms.read",
   "helpdesk.sms.readonly",
   "helpdesk.sms.update",
-  "helpdesk.support.create",
-  "helpdesk.support.delete",
-  "helpdesk.support.export",
-  "helpdesk.support.print",
-  "helpdesk.support.read",
-  "helpdesk.support.readonly",
-  "helpdesk.support.update",
+  "helpdesk.ticket.create",
+  "helpdesk.ticket.delete",
+  "helpdesk.ticket.export",
+  "helpdesk.ticket.print",
+  "helpdesk.ticket.read",
+  "helpdesk.ticket.readonly",
+  "helpdesk.ticket.update",
   "helpdesk.update",
   "incentive_control.create",
   "incentive_control.dashboard.create",
