@@ -1,3 +1,5 @@
+import { PermissionEntry } from "./permission.types";
+
 export interface GeneratorStrategy {
-  generate(permissions: string[], outputPath: string): void;
+  generate(permissions: PermissionEntry[], outputPath: string): void;
 }

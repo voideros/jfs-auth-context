@@ -9,7 +9,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ValidName",
             label: "valid_label",
-            permissions: ["MODULE", "READ"],
           },
         ],
       };
@@ -23,14 +22,40 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ParentModule",
             label: "parent",
-            permissions: ["MODULE"],
             submodules: [
               {
                 name: "ChildModule",
                 label: "child",
-                permissions: ["READ", "WRITE"],
               },
             ],
+          },
+        ],
+      };
+
+      expect(() => ModuleInputDataSchema.parse(validData)).not.toThrow();
+    });
+
+    it("should pass validation without submodules field", () => {
+      const validData = {
+        modules: [
+          {
+            name: "Simple",
+            label: "simple",
+          },
+        ],
+      };
+
+      const result = ModuleInputDataSchema.parse(validData);
+      expect(result.modules[0].submodules).toBeUndefined();
+    });
+
+    it("should pass validation with empty submodules array", () => {
+      const validData = {
+        modules: [
+          {
+            name: "Simple",
+            label: "simple",
+            submodules: [],
           },
         ],
       };
@@ -46,7 +71,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "", // Too short
             label: "valid_label",
-            permissions: ["MODULE"],
           },
         ],
       };
@@ -60,7 +84,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "a".repeat(51), // Too long
             label: "valid_label",
-            permissions: ["MODULE"],
           },
         ],
       };
@@ -74,7 +97,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ValidName",
             label: "", // Too short
-            permissions: ["MODULE"],
           },
         ],
       };
@@ -88,21 +110,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ValidName",
             label: "a".repeat(51), // Too long
-            permissions: ["MODULE"],
-          },
-        ],
-      };
-
-      expect(() => ModuleInputDataSchema.parse(invalidData)).toThrow(ZodError);
-    });
-
-    it("should fail when permissions array is empty", () => {
-      const invalidData = {
-        modules: [
-          {
-            name: "ValidName",
-            label: "valid_label",
-            permissions: [], // Empty permissions
           },
         ],
       };
@@ -116,7 +123,6 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ValidName",
             // missing label
-            permissions: ["MODULE"],
           },
         ],
       };
@@ -130,12 +136,10 @@ describe("ModuleInputDataSchema", () => {
           {
             name: "ParentModule",
             label: "parent",
-            permissions: ["MODULE"],
             submodules: [
               {
                 name: "ChildModule",
-                label: "child",
-                permissions: [], // Invalid permissions array
+                label: "", // Invalid: empty label
               },
             ],
           },

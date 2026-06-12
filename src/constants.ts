@@ -1,4 +1,3 @@
-export const MIN_PERMISSIONS_LENGTH = 1;
 export const MIN_MODULE_NAME_LENGTH = 1;
 export const MAX_MODULE_NAME_LENGTH = 50;
 export const MIN_MODULE_LABEL_LENGTH = 1;

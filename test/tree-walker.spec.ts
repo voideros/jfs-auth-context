@@ -11,8 +11,8 @@ describe("TreeWalker", () => {
     const walker = new TreeWalker(mockVisitor);
 
     const nodes: ModuleNode[] = [
-      { name: "Node A", label: "nodeA", permissions: [] },
-      { name: "Node B", label: "nodeB", permissions: [] },
+      { name: "Node A", label: "nodeA" },
+      { name: "Node B", label: "nodeB" },
     ];
 
     walker.walk(nodes);

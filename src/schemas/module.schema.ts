@@ -4,9 +4,10 @@ import {
   MAX_MODULE_NAME_LENGTH,
   MIN_MODULE_LABEL_LENGTH,
   MIN_MODULE_NAME_LENGTH,
-  MIN_PERMISSIONS_LENGTH,
 } from "../constants";
 
+// Permissions are no longer declared per-node — they are derived
+// dynamically from ACTIONS_MAP for every module/submodule.
 const baseModuleNodeSchema = z.object({
   name: z
     .string()
@@ -21,12 +22,6 @@ const baseModuleNodeSchema = z.object({
     .max(
       MAX_MODULE_LABEL_LENGTH,
       `Module label cannot exceed ${MAX_MODULE_LABEL_LENGTH} characters`,
-    ),
-  permissions: z
-    .array(z.string())
-    .min(
-      MIN_PERMISSIONS_LENGTH,
-      `Permissions must have at least ${MIN_PERMISSIONS_LENGTH} item(s)`,
     ),
 });
 
