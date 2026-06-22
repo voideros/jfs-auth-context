@@ -13,6 +13,7 @@ export class PermissionVisitor implements Visitor {
   private readonly permissions: PermissionEntry[] = [];
 
   public visitModule(node: ModuleNode, _parentPath: string): void {
+    console.log(_parentPath);
     for (const [actionKey, actionName] of Object.entries(ACTIONS_MAP)) {
       this.permissions.push({
         label: `${node.label}.${actionKey}`,
