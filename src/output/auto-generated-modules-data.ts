@@ -4,7 +4,103 @@ export const MODULES_DATA = {
     {
       "name": "Definições de Campanha",
       "label": "campaign_settings",
-      "submodules": []
+      "submodules": [
+        {
+          "name": "Agências e Mercados",
+          "label": "campaign_settings.agencies_markets",
+          "submodules": []
+        },
+        {
+          "name": "Agricultura - Culturas",
+          "label": "campaign_settings.cultures",
+          "submodules": []
+        },
+        {
+          "name": "Centro de Custo",
+          "label": "campaign_settings.cost_center",
+          "submodules": []
+        },
+        {
+          "name": "Constatações",
+          "label": "campaign_settings.constatations",
+          "submodules": []
+        },
+        {
+          "name": "Dispositivos Móveis",
+          "label": "campaign_settings.mobile_devices",
+          "submodules": []
+        },
+        {
+          "name": "Etnia",
+          "label": "campaign_settings.etnia",
+          "submodules": []
+        },
+        {
+          "name": "Formações",
+          "label": "campaign_settings.formations",
+          "submodules": []
+        },
+        {
+          "name": "Formulários de Formações",
+          "label": "campaign_settings.formation_forms",
+          "submodules": []
+        },
+        {
+          "name": "Parâmetros de Clima",
+          "label": "campaign_settings.weather_params",
+          "submodules": []
+        },
+        {
+          "name": "Pontos de Coleta de Precipitação",
+          "label": "campaign_settings.rainfall_collection_points",
+          "submodules": []
+        },
+        {
+          "name": "Produtos",
+          "label": "campaign_settings.products",
+          "submodules": []
+        },
+        {
+          "name": "Projectos",
+          "label": "campaign_settings.projects",
+          "submodules": []
+        },
+        {
+          "name": "Questionários",
+          "label": "campaign_settings.questionarie",
+          "submodules": []
+        },
+        {
+          "name": "Recomendações",
+          "label": "campaign_settings.recommendations",
+          "submodules": []
+        },
+        {
+          "name": "Religião",
+          "label": "campaign_settings.religion",
+          "submodules": []
+        },
+        {
+          "name": "Tipos de Actividade",
+          "label": "campaign_settings.activity_types",
+          "submodules": []
+        },
+        {
+          "name": "Utilizadores",
+          "label": "campaign_settings.users",
+          "submodules": []
+        },
+        {
+          "name": "Viaturas",
+          "label": "campaign_settings.vehicles",
+          "submodules": []
+        },
+        {
+          "name": "Campos Dinâmicos do Produtor",
+          "label": "campaign_settings.dyn_farmer_fields",
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Grupos de Produtores",

@@ -120,13 +120,146 @@ export type Permission =
   | "auxiliary_tables.sub_cost_center.readonly"
   | "auxiliary_tables.sub_cost_center.update"
   | "auxiliary_tables.update"
+  | "campaign_settings.activity_types.create"
+  | "campaign_settings.activity_types.delete"
+  | "campaign_settings.activity_types.export"
+  | "campaign_settings.activity_types.print"
+  | "campaign_settings.activity_types.read"
+  | "campaign_settings.activity_types.readonly"
+  | "campaign_settings.activity_types.update"
+  | "campaign_settings.agencies_markets.create"
+  | "campaign_settings.agencies_markets.delete"
+  | "campaign_settings.agencies_markets.export"
+  | "campaign_settings.agencies_markets.print"
+  | "campaign_settings.agencies_markets.read"
+  | "campaign_settings.agencies_markets.readonly"
+  | "campaign_settings.agencies_markets.update"
+  | "campaign_settings.constatations.create"
+  | "campaign_settings.constatations.delete"
+  | "campaign_settings.constatations.export"
+  | "campaign_settings.constatations.print"
+  | "campaign_settings.constatations.read"
+  | "campaign_settings.constatations.readonly"
+  | "campaign_settings.constatations.update"
+  | "campaign_settings.cost_center.create"
+  | "campaign_settings.cost_center.delete"
+  | "campaign_settings.cost_center.export"
+  | "campaign_settings.cost_center.print"
+  | "campaign_settings.cost_center.read"
+  | "campaign_settings.cost_center.readonly"
+  | "campaign_settings.cost_center.update"
   | "campaign_settings.create"
+  | "campaign_settings.cultures.create"
+  | "campaign_settings.cultures.delete"
+  | "campaign_settings.cultures.export"
+  | "campaign_settings.cultures.print"
+  | "campaign_settings.cultures.read"
+  | "campaign_settings.cultures.readonly"
+  | "campaign_settings.cultures.update"
   | "campaign_settings.delete"
+  | "campaign_settings.dyn_farmer_fields.create"
+  | "campaign_settings.dyn_farmer_fields.delete"
+  | "campaign_settings.dyn_farmer_fields.export"
+  | "campaign_settings.dyn_farmer_fields.print"
+  | "campaign_settings.dyn_farmer_fields.read"
+  | "campaign_settings.dyn_farmer_fields.readonly"
+  | "campaign_settings.dyn_farmer_fields.update"
+  | "campaign_settings.etnia.create"
+  | "campaign_settings.etnia.delete"
+  | "campaign_settings.etnia.export"
+  | "campaign_settings.etnia.print"
+  | "campaign_settings.etnia.read"
+  | "campaign_settings.etnia.readonly"
+  | "campaign_settings.etnia.update"
   | "campaign_settings.export"
+  | "campaign_settings.formation_forms.create"
+  | "campaign_settings.formation_forms.delete"
+  | "campaign_settings.formation_forms.export"
+  | "campaign_settings.formation_forms.print"
+  | "campaign_settings.formation_forms.read"
+  | "campaign_settings.formation_forms.readonly"
+  | "campaign_settings.formation_forms.update"
+  | "campaign_settings.formations.create"
+  | "campaign_settings.formations.delete"
+  | "campaign_settings.formations.export"
+  | "campaign_settings.formations.print"
+  | "campaign_settings.formations.read"
+  | "campaign_settings.formations.readonly"
+  | "campaign_settings.formations.update"
+  | "campaign_settings.mobile_devices.create"
+  | "campaign_settings.mobile_devices.delete"
+  | "campaign_settings.mobile_devices.export"
+  | "campaign_settings.mobile_devices.print"
+  | "campaign_settings.mobile_devices.read"
+  | "campaign_settings.mobile_devices.readonly"
+  | "campaign_settings.mobile_devices.update"
   | "campaign_settings.print"
+  | "campaign_settings.products.create"
+  | "campaign_settings.products.delete"
+  | "campaign_settings.products.export"
+  | "campaign_settings.products.print"
+  | "campaign_settings.products.read"
+  | "campaign_settings.products.readonly"
+  | "campaign_settings.products.update"
+  | "campaign_settings.projects.create"
+  | "campaign_settings.projects.delete"
+  | "campaign_settings.projects.export"
+  | "campaign_settings.projects.print"
+  | "campaign_settings.projects.read"
+  | "campaign_settings.projects.readonly"
+  | "campaign_settings.projects.update"
+  | "campaign_settings.questionarie.create"
+  | "campaign_settings.questionarie.delete"
+  | "campaign_settings.questionarie.export"
+  | "campaign_settings.questionarie.print"
+  | "campaign_settings.questionarie.read"
+  | "campaign_settings.questionarie.readonly"
+  | "campaign_settings.questionarie.update"
+  | "campaign_settings.rainfall_collection_points.create"
+  | "campaign_settings.rainfall_collection_points.delete"
+  | "campaign_settings.rainfall_collection_points.export"
+  | "campaign_settings.rainfall_collection_points.print"
+  | "campaign_settings.rainfall_collection_points.read"
+  | "campaign_settings.rainfall_collection_points.readonly"
+  | "campaign_settings.rainfall_collection_points.update"
   | "campaign_settings.read"
   | "campaign_settings.readonly"
+  | "campaign_settings.recommendations.create"
+  | "campaign_settings.recommendations.delete"
+  | "campaign_settings.recommendations.export"
+  | "campaign_settings.recommendations.print"
+  | "campaign_settings.recommendations.read"
+  | "campaign_settings.recommendations.readonly"
+  | "campaign_settings.recommendations.update"
+  | "campaign_settings.religion.create"
+  | "campaign_settings.religion.delete"
+  | "campaign_settings.religion.export"
+  | "campaign_settings.religion.print"
+  | "campaign_settings.religion.read"
+  | "campaign_settings.religion.readonly"
+  | "campaign_settings.religion.update"
   | "campaign_settings.update"
+  | "campaign_settings.users.create"
+  | "campaign_settings.users.delete"
+  | "campaign_settings.users.export"
+  | "campaign_settings.users.print"
+  | "campaign_settings.users.read"
+  | "campaign_settings.users.readonly"
+  | "campaign_settings.users.update"
+  | "campaign_settings.vehicles.create"
+  | "campaign_settings.vehicles.delete"
+  | "campaign_settings.vehicles.export"
+  | "campaign_settings.vehicles.print"
+  | "campaign_settings.vehicles.read"
+  | "campaign_settings.vehicles.readonly"
+  | "campaign_settings.vehicles.update"
+  | "campaign_settings.weather_params.create"
+  | "campaign_settings.weather_params.delete"
+  | "campaign_settings.weather_params.export"
+  | "campaign_settings.weather_params.print"
+  | "campaign_settings.weather_params.read"
+  | "campaign_settings.weather_params.readonly"
+  | "campaign_settings.weather_params.update"
   | "campaigns.create"
   | "campaigns.delete"
   | "campaigns.export"
@@ -633,13 +766,146 @@ export const PERMISSIONS = [
   "auxiliary_tables.sub_cost_center.readonly",
   "auxiliary_tables.sub_cost_center.update",
   "auxiliary_tables.update",
+  "campaign_settings.activity_types.create",
+  "campaign_settings.activity_types.delete",
+  "campaign_settings.activity_types.export",
+  "campaign_settings.activity_types.print",
+  "campaign_settings.activity_types.read",
+  "campaign_settings.activity_types.readonly",
+  "campaign_settings.activity_types.update",
+  "campaign_settings.agencies_markets.create",
+  "campaign_settings.agencies_markets.delete",
+  "campaign_settings.agencies_markets.export",
+  "campaign_settings.agencies_markets.print",
+  "campaign_settings.agencies_markets.read",
+  "campaign_settings.agencies_markets.readonly",
+  "campaign_settings.agencies_markets.update",
+  "campaign_settings.constatations.create",
+  "campaign_settings.constatations.delete",
+  "campaign_settings.constatations.export",
+  "campaign_settings.constatations.print",
+  "campaign_settings.constatations.read",
+  "campaign_settings.constatations.readonly",
+  "campaign_settings.constatations.update",
+  "campaign_settings.cost_center.create",
+  "campaign_settings.cost_center.delete",
+  "campaign_settings.cost_center.export",
+  "campaign_settings.cost_center.print",
+  "campaign_settings.cost_center.read",
+  "campaign_settings.cost_center.readonly",
+  "campaign_settings.cost_center.update",
   "campaign_settings.create",
+  "campaign_settings.cultures.create",
+  "campaign_settings.cultures.delete",
+  "campaign_settings.cultures.export",
+  "campaign_settings.cultures.print",
+  "campaign_settings.cultures.read",
+  "campaign_settings.cultures.readonly",
+  "campaign_settings.cultures.update",
   "campaign_settings.delete",
+  "campaign_settings.dyn_farmer_fields.create",
+  "campaign_settings.dyn_farmer_fields.delete",
+  "campaign_settings.dyn_farmer_fields.export",
+  "campaign_settings.dyn_farmer_fields.print",
+  "campaign_settings.dyn_farmer_fields.read",
+  "campaign_settings.dyn_farmer_fields.readonly",
+  "campaign_settings.dyn_farmer_fields.update",
+  "campaign_settings.etnia.create",
+  "campaign_settings.etnia.delete",
+  "campaign_settings.etnia.export",
+  "campaign_settings.etnia.print",
+  "campaign_settings.etnia.read",
+  "campaign_settings.etnia.readonly",
+  "campaign_settings.etnia.update",
   "campaign_settings.export",
+  "campaign_settings.formation_forms.create",
+  "campaign_settings.formation_forms.delete",
+  "campaign_settings.formation_forms.export",
+  "campaign_settings.formation_forms.print",
+  "campaign_settings.formation_forms.read",
+  "campaign_settings.formation_forms.readonly",
+  "campaign_settings.formation_forms.update",
+  "campaign_settings.formations.create",
+  "campaign_settings.formations.delete",
+  "campaign_settings.formations.export",
+  "campaign_settings.formations.print",
+  "campaign_settings.formations.read",
+  "campaign_settings.formations.readonly",
+  "campaign_settings.formations.update",
+  "campaign_settings.mobile_devices.create",
+  "campaign_settings.mobile_devices.delete",
+  "campaign_settings.mobile_devices.export",
+  "campaign_settings.mobile_devices.print",
+  "campaign_settings.mobile_devices.read",
+  "campaign_settings.mobile_devices.readonly",
+  "campaign_settings.mobile_devices.update",
   "campaign_settings.print",
+  "campaign_settings.products.create",
+  "campaign_settings.products.delete",
+  "campaign_settings.products.export",
+  "campaign_settings.products.print",
+  "campaign_settings.products.read",
+  "campaign_settings.products.readonly",
+  "campaign_settings.products.update",
+  "campaign_settings.projects.create",
+  "campaign_settings.projects.delete",
+  "campaign_settings.projects.export",
+  "campaign_settings.projects.print",
+  "campaign_settings.projects.read",
+  "campaign_settings.projects.readonly",
+  "campaign_settings.projects.update",
+  "campaign_settings.questionarie.create",
+  "campaign_settings.questionarie.delete",
+  "campaign_settings.questionarie.export",
+  "campaign_settings.questionarie.print",
+  "campaign_settings.questionarie.read",
+  "campaign_settings.questionarie.readonly",
+  "campaign_settings.questionarie.update",
+  "campaign_settings.rainfall_collection_points.create",
+  "campaign_settings.rainfall_collection_points.delete",
+  "campaign_settings.rainfall_collection_points.export",
+  "campaign_settings.rainfall_collection_points.print",
+  "campaign_settings.rainfall_collection_points.read",
+  "campaign_settings.rainfall_collection_points.readonly",
+  "campaign_settings.rainfall_collection_points.update",
   "campaign_settings.read",
   "campaign_settings.readonly",
+  "campaign_settings.recommendations.create",
+  "campaign_settings.recommendations.delete",
+  "campaign_settings.recommendations.export",
+  "campaign_settings.recommendations.print",
+  "campaign_settings.recommendations.read",
+  "campaign_settings.recommendations.readonly",
+  "campaign_settings.recommendations.update",
+  "campaign_settings.religion.create",
+  "campaign_settings.religion.delete",
+  "campaign_settings.religion.export",
+  "campaign_settings.religion.print",
+  "campaign_settings.religion.read",
+  "campaign_settings.religion.readonly",
+  "campaign_settings.religion.update",
   "campaign_settings.update",
+  "campaign_settings.users.create",
+  "campaign_settings.users.delete",
+  "campaign_settings.users.export",
+  "campaign_settings.users.print",
+  "campaign_settings.users.read",
+  "campaign_settings.users.readonly",
+  "campaign_settings.users.update",
+  "campaign_settings.vehicles.create",
+  "campaign_settings.vehicles.delete",
+  "campaign_settings.vehicles.export",
+  "campaign_settings.vehicles.print",
+  "campaign_settings.vehicles.read",
+  "campaign_settings.vehicles.readonly",
+  "campaign_settings.vehicles.update",
+  "campaign_settings.weather_params.create",
+  "campaign_settings.weather_params.delete",
+  "campaign_settings.weather_params.export",
+  "campaign_settings.weather_params.print",
+  "campaign_settings.weather_params.read",
+  "campaign_settings.weather_params.readonly",
+  "campaign_settings.weather_params.update",
   "campaigns.create",
   "campaigns.delete",
   "campaigns.export",
