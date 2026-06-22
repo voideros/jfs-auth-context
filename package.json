@@ -1,6 +1,6 @@
 {
-  "name": "@edilson258/jfs-shared-modules-and-auth-context",
-  "version": "1.0.0",
+  "name": "@voideros/jfs-shared-modules-and-auth-context",
+  "version": "1.1.5",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -10,14 +10,20 @@
       "types": "./dist/index.d.ts",
       "require": "./dist/index.js",
       "import": "./dist/index.mjs"
+    },
+    "./node": {
+      "types": "./dist/node.d.ts",
+      "require": "./dist/node.js",
+      "import": "./dist/node.mjs"
     }
   },
   "bin": {
-    "jfs-generate": "./dist/cli.js"
+    "jfs-generate": "./dist/cli.js",
+    "jfs-seed-db": "./dist/seed-db.js"
   },
   "files": [
     "dist",
-    "MODULES.json",
+    "MODULES.jsonc",
     "README.md",
     "CHANGELOG.md"
   ],
@@ -28,6 +34,7 @@
     "fmt": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "generate": "ts-node src/cli.ts",
+    "seed-db": "ts-node src/seed-db.ts MODULES.jsonc",
     "prepublishOnly": "yarn generate MODULES.jsonc && yarn build && yarn test",
     "changeset": "changeset",
     "release": "npm run build && changeset publish"
@@ -43,17 +50,20 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "tsup": "^8.0.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "@types/pg": "^8.11.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/edilson258/jfs-auth-context.git"
+    "url": "git+https://github.com/voideros/jfs-auth-context.git"
   },
   "dependencies": {
+    "dotenv": "^16.4.0",
     "json5": "^2.2.3",
+    "pg": "^8.13.0",
     "zod": "^4.4.3"
   }
 }

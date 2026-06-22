@@ -1,4 +1,5 @@
-{
+// AUTO-GENERATED FILE. DO NOT EDIT DIRECTLY.
+export const MODULES_DATA = {
   "modules": [
     {
       "name": "Definições de Campanha",
@@ -7,109 +8,109 @@
         {
           "name": "Agências e Mercados",
           "label": "campaign_settings.agencies_markets",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Agricultura - Culturas",
           "label": "campaign_settings.cultures",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Centro de Custo",
           "label": "campaign_settings.cost_center",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Constatações",
           "label": "campaign_settings.constatations",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Dispositivos Móveis",
           "label": "campaign_settings.mobile_devices",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Etnia",
           "label": "campaign_settings.etnia",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Formações",
           "label": "campaign_settings.formations",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Formulários de Formações",
           "label": "campaign_settings.formation_forms",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Parâmetros de Clima",
           "label": "campaign_settings.weather_params",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Pontos de Coleta de Precipitação",
           "label": "campaign_settings.rainfall_collection_points",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Produtos",
           "label": "campaign_settings.products",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Projectos",
           "label": "campaign_settings.projects",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Questionários",
           "label": "campaign_settings.questionarie",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Recomendações",
           "label": "campaign_settings.recommendations",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Religião",
           "label": "campaign_settings.religion",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Tipos de Actividade",
           "label": "campaign_settings.activity_types",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Utilizadores",
           "label": "campaign_settings.users",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Viaturas",
           "label": "campaign_settings.vehicles",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Campos Dinâmicos do Produtor",
           "label": "campaign_settings.dyn_farmer_fields",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Grupos de Produtores",
       "label": "farmer_groups",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Grupos de Formações",
       "label": "training_groups",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Configurações",
@@ -118,34 +119,34 @@
         {
           "name": "Gestão de Utilizadores",
           "label": "settings.user_management",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Gestão de Permissões",
           "label": "settings.permissions_management",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Dispositivos Móveis",
           "label": "settings.mobile_devices",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Componentes",
           "label": "settings.components",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Termos e Condições",
           "label": "settings.terms_and_conditions",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Notificações",
           "label": "settings.notifications",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Tabelas Auxiliares",
@@ -154,64 +155,64 @@
         {
           "name": "Agricultura - Culturas",
           "label": "auxiliary_tables.agriculture_cultures",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Tipos de Produtos",
           "label": "auxiliary_tables.product_types",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Tipos de Actividades",
           "label": "auxiliary_tables.activity_types",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Subtipos de Actividades",
           "label": "auxiliary_tables.activity_subtypes",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Religião",
           "label": "auxiliary_tables.religion",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Etnia",
           "label": "auxiliary_tables.ethnicity",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Projectos",
           "label": "auxiliary_tables.projects",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Centro de Custo",
           "label": "auxiliary_tables.cost_center",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Sub Centro de Custo",
           "label": "auxiliary_tables.sub_cost_center",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Questionários",
           "label": "auxiliary_tables.forms",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Fases de Culturas",
           "label": "auxiliary_tables.culture_stages",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Recomendações e Constatações",
           "label": "auxiliary_tables.findings",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Estrutura Administrativa",
@@ -220,39 +221,39 @@
         {
           "name": "Agências",
           "label": "administrative_structure.agencies",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Mercados",
           "label": "administrative_structure.markets",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Popular",
           "label": "administrative_structure.popular",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Entidades",
       "label": "entities",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Produtos",
       "label": "products",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Operadores de Logística",
       "label": "logistics_operators",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Viaturas",
       "label": "vehicles",
-      "submodules": [],
+      "submodules": []
     },
     {
       "name": "Gestão de Produtores",
@@ -261,14 +262,14 @@
         {
           "name": "Produtores",
           "label": "farmer_management.farmers",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Definições de Classificação",
           "label": "farmer_management.classification_definitions",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Produtores",
@@ -277,14 +278,14 @@
         {
           "name": "Produtores",
           "label": "farmers.farmers",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Transferência",
           "label": "farmers.transfer",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Questionários",
@@ -293,9 +294,9 @@
         {
           "name": "Questionários - Análise",
           "label": "forms.analysis",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Formações",
@@ -304,9 +305,9 @@
         {
           "name": "Grupos de Formações",
           "label": "trainings.groups",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Insumos",
@@ -315,14 +316,14 @@
         {
           "name": "Distribuição",
           "label": "supplies.distribution",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Histórico de Reimpressão",
           "label": "supplies.reprint_history",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Sessões de Compra",
@@ -331,14 +332,14 @@
         {
           "name": "Sessões de Compra",
           "label": "purchase_sessions.sessions",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Controlo de Pagamentos",
           "label": "purchase_sessions.payment_control",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Gestão de Técnicos",
@@ -347,24 +348,24 @@
         {
           "name": "Dashboard de Tarefas",
           "label": "technician_management.task_dashboard",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Tarefas",
           "label": "technician_management.tasks",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Actividades de Referência",
           "label": "technician_management.reference_activities",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Planos Gerais",
           "label": "technician_management.general_plans",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Logística",
@@ -373,9 +374,9 @@
         {
           "name": "Actividades",
           "label": "logistics.activities",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Cartografia",
@@ -384,19 +385,19 @@
         {
           "name": "Validação de Áreas",
           "label": "cartography.area_validation",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Navegador GIS",
           "label": "cartography.gis_navigator",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Exportação de KML",
           "label": "cartography.kml_export",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Relatórios",
@@ -405,9 +406,9 @@
         {
           "name": "Relatórios",
           "label": "reports.reports",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Helpdesk",
@@ -416,29 +417,29 @@
         {
           "name": "Dashboard",
           "label": "helpdesk.dashboard",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Definições",
           "label": "helpdesk.settings",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Envio de SMS",
           "label": "helpdesk.sms",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Suporte (Tickets)",
           "label": "helpdesk.ticket",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Lembretes",
           "label": "helpdesk.reminders",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Controlo de Incentivos",
@@ -447,14 +448,14 @@
         {
           "name": "Verificações",
           "label": "incentive_control.verifications",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Dashboard",
           "label": "incentive_control.dashboard",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Pluviosidade",
@@ -463,19 +464,19 @@
         {
           "name": "Dashboard",
           "label": "precipitation.dashboard",
-          "submodules": [],
+          "submodules": []
         },
         {
           "name": "Colheitas",
           "label": "precipitation.collections",
-          "submodules": [],
-        },
-      ],
+          "submodules": []
+        }
+      ]
     },
     {
       "name": "Campanhas",
       "label": "campaigns",
-      "submodules": [],
-    },
-  ],
-}
+      "submodules": []
+    }
+  ]
+};

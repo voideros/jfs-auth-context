@@ -1,26 +1,34 @@
+import { ACTIONS_MAP } from "../actions.mapper";
 import { ModuleNode } from "./module.types";
 import { Visitor } from "./module.visitor";
+import { PermissionEntry } from "./permission.types";
 
+/**
+ * Walks the module tree and emits one PermissionEntry per (node × action).
+ *
+ * Example: node { label: "supply.distribute" } produces
+ *   "supply.distribute.read", "supply.distribute.create", …
+ */
 export class PermissionVisitor implements Visitor {
-  private readonly permissions = new Set<string>();
+  private readonly permissions: PermissionEntry[] = [];
 
-  public visitModule(node: ModuleNode, parentPath: string): void {
-    const currentPath = parentPath ? `${parentPath}.${node.label}` : node.label;
-
-    if (node.permissions) {
-      for (const perm of node.permissions) {
-        this.permissions.add(`${currentPath}.${perm.toLowerCase()}`);
-      }
+  public visitModule(node: ModuleNode, _parentPath: string): void {
+    for (const [actionKey, actionName] of Object.entries(ACTIONS_MAP)) {
+      this.permissions.push({
+        label: `${node.label}.${actionKey}`,
+        actionName,
+        moduleName: node.name,
+        moduleLabel: node.label,
+      });
     }
 
-    if (node.submodules && node.submodules.length > 0) {
-      for (const sub of node.submodules) {
-        this.visitModule(sub, currentPath);
-      }
+    for (const sub of node.submodules ?? []) {
+      this.visitModule(sub, node.label);
     }
   }
 
-  public getPermissions(): string[] {
-    return Array.from(this.permissions).sort();
+  /** Returns collected permissions sorted by label for deterministic output. */
+  public getPermissions(): PermissionEntry[] {
+    return [...this.permissions].sort((a, b) => a.label.localeCompare(b.label));
   }
 }

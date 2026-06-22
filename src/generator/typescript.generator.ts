@@ -1,16 +1,17 @@
 import * as fs from "fs";
 import { GeneratorStrategy } from "./generator.strategy";
+import { PermissionEntry } from "./permission.types";
 
 export class TypeScriptGenerator implements GeneratorStrategy {
-  public generate(permissions: string[], outputPath: string): void {
-    const sortedPermissions = [...permissions].sort();
+  public generate(permissions: PermissionEntry[], outputPath: string): void {
+    const labels = permissions.map((p) => p.label).sort();
 
     const typeDefinitionString = `// AUTO-GENERATED FILE. DO NOT EDIT DIRECTLY.\n
 export type Permission =
-${sortedPermissions.length > 0 ? sortedPermissions.map((perm) => `  | "${perm}"`).join("\n") : "  never"};
+${labels.length > 0 ? labels.map((label) => `  | "${label}"`).join("\n") : "  never"};
 
 export const PERMISSIONS = [
-${sortedPermissions.length > 0 ? sortedPermissions.map((perm) => `  "${perm}",`).join("\n") : ""}
+${labels.length > 0 ? labels.map((label) => `  "${label}",`).join("\n") : ""}
 ] as const;
 `;
 

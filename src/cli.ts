@@ -68,7 +68,17 @@ function main() {
 
   processor.process(inputData, outputPath);
 
+  const modulesDataPath = path.join(
+    path.dirname(outputPath),
+    "auto-generated-modules-data.ts",
+  );
+  const modulesDataContent = `// AUTO-GENERATED FILE. DO NOT EDIT DIRECTLY.
+export const MODULES_DATA = ${JSON.stringify(inputData, null, 2)};
+`;
+  fs.writeFileSync(modulesDataPath, modulesDataContent);
+
   console.log(`[✔] Generated Type definitions: ${outputPath}`);
+  console.log(`[✔] Generated Module data: ${modulesDataPath}`);
 }
 
 main();
