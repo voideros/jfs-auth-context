@@ -227,11 +227,6 @@ export const MODULES_DATA = {
           "name": "Mercados",
           "label": "administrative_structure.markets",
           "submodules": []
-        },
-        {
-          "name": "Popular",
-          "label": "administrative_structure.popular",
-          "submodules": []
         }
       ]
     },

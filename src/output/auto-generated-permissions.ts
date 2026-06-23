@@ -18,13 +18,6 @@ export type Permission =
   | "administrative_structure.markets.read"
   | "administrative_structure.markets.readonly"
   | "administrative_structure.markets.update"
-  | "administrative_structure.popular.create"
-  | "administrative_structure.popular.delete"
-  | "administrative_structure.popular.export"
-  | "administrative_structure.popular.print"
-  | "administrative_structure.popular.read"
-  | "administrative_structure.popular.readonly"
-  | "administrative_structure.popular.update"
   | "administrative_structure.print"
   | "administrative_structure.read"
   | "administrative_structure.readonly"
@@ -664,13 +657,6 @@ export const PERMISSIONS = [
   "administrative_structure.markets.read",
   "administrative_structure.markets.readonly",
   "administrative_structure.markets.update",
-  "administrative_structure.popular.create",
-  "administrative_structure.popular.delete",
-  "administrative_structure.popular.export",
-  "administrative_structure.popular.print",
-  "administrative_structure.popular.read",
-  "administrative_structure.popular.readonly",
-  "administrative_structure.popular.update",
   "administrative_structure.print",
   "administrative_structure.read",
   "administrative_structure.readonly",
